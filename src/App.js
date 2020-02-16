@@ -1,7 +1,9 @@
 import React from 'react';
-import './App.css';
+import './css/noter.css';
 import ChatScripts from './components/ChatScripts.js'
 import NoterSelector from './components/NoterSelector';
+import TabComponent from './components/TabComponent.js'; 
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
           Noter
         </p>
       </header>
+        <TabComponent />
         <ChatScripts />
         <NoterSelector />
     </div>

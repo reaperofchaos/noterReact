@@ -21,7 +21,8 @@ export default class NoterSelector extends React.Component{
 			}
 		}
 		return result; 
-	}
+    }
+    
     componentDidMount(){
         let buttonList = this.getUniqueNoteTypes();
         this.setState({noterCategories: buttonList});
@@ -43,7 +44,7 @@ export default class NoterSelector extends React.Component{
                                 <td> 
                                     <input 
                                         type="radio" 
-                                        onclick="NoterCategory.create(this)" 
+                                        onClick="NoterCategory.create(this)" 
                                         id="notetype" 
                                         name="notetype" 
                                         value={currentElement} />
