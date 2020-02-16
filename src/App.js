@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ChatScripts from './components/ChatScripts.js'
+import NoterSelector from './components/NoterSelector';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Noter">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Noter
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+        <ChatScripts />
+        <NoterSelector />
     </div>
   );
 }
