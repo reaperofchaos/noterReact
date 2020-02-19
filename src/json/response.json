@@ -131,5 +131,38 @@
 				"response": "Anyong Haseyo"
 			}
 		]
+	},
+	{
+		"groupName": "test",
+		"subGroup": "",
+		"buttons": [{
+				"name": "hello",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Hello",
+				"response": "Hello, how can I help you today?"
+			}]
+	},
+	{
+		"groupName": "test",
+		"subGroup": "test2",
+		"buttons": [{
+				"name": "hello",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Hello",
+				"response": "Hello, how can I help you today?"
+			}]
+	},
+	{
+		"groupName": "test",
+		"subGroup": "test3",
+		"buttons": [{
+				"name": "hello",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Hello",
+				"response": "Hello, how can I help you today?"
+			}]
 	}
 ]

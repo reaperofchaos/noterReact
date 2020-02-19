@@ -18,6 +18,7 @@ export default class SubChatOptions extends React.Component{
                                         .map((currentElement)=>{
                                             return (currentElement.subGroup);
                                         })
+        this.setState({chatSubCategories: subChatCategories});
         return subChatCategories;
     }
 
@@ -39,7 +40,7 @@ export default class SubChatOptions extends React.Component{
     {
         return(
             <div id='chatSubOptions'>
-                <label for='chatSubOptionsBox'>Chat Type:  </label>
+                <label htmlFor='chatSubOptionsBox'>Chat Type:  </label>
                 <select name='chatSubOptions' id='chatSubOptionsBox' onClick = 'ChatScripts.getChatButtons()'>
                         {this.state.subChatCategories.map((currentElement)=>{
                             return(

@@ -34,9 +34,9 @@ export default class NoterSelector extends React.Component{
     render()
     {
         return (
-            <p>
-                Noter Selector goes here
-                <table class="table borderless">
+            <div>
+                <p>Noter Selector goes here</p>
+                <table className="table borderless">
                     <tbody>
                         <tr>
                             {this.state.noterCategories.map((currentElement)=>{
@@ -63,7 +63,7 @@ export default class NoterSelector extends React.Component{
                         </tr>
                     </tbody>    
                 </table> 
-            </p>
+            </div>
         );
     }
 }

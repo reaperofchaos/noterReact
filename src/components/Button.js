@@ -5,11 +5,11 @@ export default class Button extends React.Component{
     {
         super(props)
         this.state = {
-            name: props.name,
-			action: props.action,
-			classType: props.classType,
-			value: props.value,
-			response: props.response
+            name: this.props.name,
+			action: this.props.action,
+			classType: this.props.classType,
+			value: this.props.value,
+			response: this.props.response
         }
     }
 
@@ -22,9 +22,9 @@ export default class Button extends React.Component{
     render()
     {
         return (
-            <button name="{this.state.name}" 
-                    class="{this.state.classType" 
-                    onClick="{this.state.action}(&quot;{this.state.response}&quot;, &quot;{this.state.value}&quot;, 1)">
+            <button key={this.props.key}
+                    name={this.state.name}
+                    class={this.state.classType}>
                         {this.state.value}
             </button>
         )
